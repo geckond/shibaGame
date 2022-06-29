@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet The Shiba!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+</head>
+<body onresize="ajustaTamanhoTela()">
+
+    <div class="painel">
+        <div class="vidas">
+            <img src="imagens/heart.png" id="v1" alt="" width="40">
+            <img src="imagens/heart.png" id="v2" alt="" width="40">
+            <img src="imagens/heart.png" id="v3" alt="" width="40">
+        </div>
+
+        <div class="cronometro">
+            Tempo restante: <span id="tempo"></span></div>
+    </div>
+
+    <script>
+        var criaShiba =  setInterval(function() {
+            posicaoRandomica()
+        }, 3000)
+    </script>
+
+</body>
+</html>
